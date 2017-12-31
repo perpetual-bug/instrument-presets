@@ -12,7 +12,7 @@ import { DataService } from '../data.service';
 export class PresetNewComponent implements OnInit {
 
   presetName: string = '';
-
+  presets = [];
   constructor(private router: Router, private _data: DataService ) {
   }
 
@@ -28,7 +28,6 @@ export class PresetNewComponent implements OnInit {
 
     this.presets.push(this.presetName);
     this.presetName = '';
-    this.itemCount = this.presets.length;
     this._data.changePreset(this.presets);
 
     this.redirect()
