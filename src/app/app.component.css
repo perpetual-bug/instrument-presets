@@ -1,0 +1,33 @@
+header {
+  position: fixed;
+  top: 0;
+}
+main {
+  padding-top: 32px;
+}
+
+header {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 50% auto;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  background-color: #fff;
+
+  border-bottom: 2px solid black;
+}
+
+header nav ul {
+  display: grid;
+  display: flex;
+  align-items:center
+}
+header nav ul li {
+  padding: 4px;
+  font-size: 12px;
+  text-align: center;
+}

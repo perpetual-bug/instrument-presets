@@ -1,26 +1,8 @@
 <div class="container color-dark">
-  <div class="col">
-    <p>Añade un preset</p>
-  </div>
-  <div class="col">
-    <p>Presets</p>
-  </div>
-</div>
-<div class="container color-light">
-  <div class="col">
-    <p class="sm">Añade un preset</p>
-    <form>
-      <input type="text" class="txt" name="item" placeholder="Nombre Preset">
-      <input type="submit" class="btn" value="Añadir">
-    </form>
-  <!--
-
-
-  -->
-</div>
-<div class="col">
-   <div class="preset-container">
-     <app-preset-indicator></app-preset-indicator>
-  </div>
+  <h2>Presets ({{ itemCount }})</h2>
+  <div class="preset-container" *ngFor="let preset of presets">
+    <!-- <app-preset-indicator></app-preset-indicator> -->
+    {{preset}}
+    <app-preset-indicator></app-preset-indicator>
   </div>
 </div>

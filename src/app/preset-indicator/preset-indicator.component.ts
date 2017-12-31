@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresetIndicatorComponent implements OnInit {
 
+  name: string = '';
+
   constructor() { }
 
   ngOnInit() {

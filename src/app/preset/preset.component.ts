@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-preset',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresetComponent implements OnInit {
 
-  constructor() { }
+  id: number = -1;
+
+  constructor(private route: ActivatedRoute) {
+    this.route.params.subscribe(res => this.id=res.id);
+  }
 
   ngOnInit() {
+  }
+
+  activate() {
+    console.log( "activate" );
   }
 
 }

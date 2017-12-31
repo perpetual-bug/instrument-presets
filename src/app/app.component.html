@@ -1,10 +1,22 @@
-<h1>{{title}}</h1>
-<ul>
-  <li><a routerLink="presets">Presets</a></li>
-  <li><a routerLink="preset">Preset</a></li>
-</ul>
+<header>
+
+  <a href="http://github.com/perpetual-bug/INSTRUMENT" target="_blank">
+    <img src="http://fakeimg.pl/72x32/fff/000?text=INSTRUMENT&font=impact&font_size=16" alt="logo">
+  </a>
+
+  <nav>
+    <ul>
+      <li><a routerLink="">Sessions</a></li>
+      <li><a routerLink="presets">Presets</a></li>
+      <li><a routerLink="presetNew">New Preset</a></li>
+    </ul>
+  </nav>
+
+</header>
 
 
-<app-presets></app-presets>
+<main>
 
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+
+</main>

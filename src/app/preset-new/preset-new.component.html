@@ -1,0 +1,68 @@
+<h2>New Preset</h2>
+
+<form>
+  <input type="text" class="txt" name="item" placeholder="Nombre Preset" [(ngModel)]="presetName">
+
+  <fieldset class="gain_levels">
+    <li>
+      <button (click)="selectSample()">Sample 1</button>
+      <input type="range" value="0.1" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 2</button>
+      <input type="range" value="0.2" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 3</button>
+      <input type="range" value="0.3" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 4</button>
+      <input type="range" value="0.4" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 5</button>
+      <input type="range" value="0.5" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 6</button>
+      <input type="range" value="0.6" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 7</button>
+      <input type="range" value="0.7" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 8</button>
+      <input type="range" value="0.8" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 9</button>
+      <input type="range" value="0.9" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 10</button>
+      <input type="range" value="0.10" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 11</button>
+      <input type="range" value="0.11" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 12</button>
+      <input type="range" value="0.12" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 13</button>
+      <input type="range" value="0.13" min="0" max="1" step="0.05">
+    </li>
+    <li>
+      <button (click)="selectSample()">Sample 14</button>
+      <input type="range" value="0.14" min="0" max="1" step="0.05">
+    </li>
+  </fieldset>
+
+  <footer>
+    <input type="submit" class="btn" value="Añadir" (click)="addPreset()">
+  </footer>
+</form>
